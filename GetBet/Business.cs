@@ -40,7 +40,7 @@ namespace GetBet
                     playModel.Team2 = mac.AN;
                     playModel.ScoreTwoAndTwo = mac.MA.FirstOrDefault(x => x.MTID == 205)?.OCA.FirstOrDefault(z => z.N == 15)?.O;
                     playModel.SixGoal = mac.MA.FirstOrDefault(x => x.MTID == 43)?.OCA.FirstOrDefault(z => z.N == 4)?.O;
-
+                    playModel.Date = $"{mac.DAY}-{mac.T}";
                     if (playModel.ScoreTwoAndTwo != null && playModel.SixGoal != null)
                     {
                         var fark = playModel.ScoreTwoAndTwo.Value - playModel.SixGoal.Value;

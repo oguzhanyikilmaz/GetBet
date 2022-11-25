@@ -10,5 +10,6 @@ namespace GetBet
         public string Team2 { get; set; }
         public double? ScoreTwoAndTwo { get; set; }
         public double? SixGoal { get; set; }
+        public string Date { get; set; }
     }
 }
